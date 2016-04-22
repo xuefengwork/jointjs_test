@@ -45,7 +45,7 @@
     });
      
     rect.on('change:position', function(element) {
-        console.log(element.id, ':', element.get('position'));
+        console.log(element.id, ': here is the position', element.get('position'));
     });
       
       var paperSmall = new joint.dia.Paper({
@@ -55,8 +55,8 @@
         model: graph,
         gridSize: 1
     });
-    paperSmall.scale(.5);
-    paperSmall.$el.css('pointer-events', 'none');
+//    paperSmall.scale(.5);
+//    paperSmall.$el.css('pointer-events', 'none');
       
 
   </script>
